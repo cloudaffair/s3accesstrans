@@ -1,21 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "${var.terraform_backend_bucket}"
-    key    = "${var.terraform_backend_key}"
-    region = "${var.terraform_backend_region}"
+    bucket = "dev-source-ooyala-com"
+    key    = "terraform_state/s3_access_management"
+    region = "us-east-1"
   }
-}
-
-variable "terraform_backend_bucket" {
-  type = "string"
-}
-
-variable "terraform_backend_key" {
-  type = "string"
-}
-
-variable "terraform_backend_region" {
-  type = "string"
 }
 
 variable "monitoring_bucket" {
