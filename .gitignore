@@ -1,0 +1,11 @@
+/.bundle/
+/.idea/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/deploy/.terraform/
+*.gem
