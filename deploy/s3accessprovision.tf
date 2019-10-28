@@ -1,8 +1,24 @@
+variable "backend_bucket" {
+  type = string
+}
+
+variable "backend_region" {
+  type = string
+}
+
+variable "backend_prefix" {
+  type = string
+}
 terraform {
-  backend "s3" {
-    bucket = "dev-source-ooyala-com"
-    key    = "terraform_state/s3accesstrans"
-    region = "us-east-1"
+  backend "s3" {}
+}
+
+data "terraform_remote_state" "state" {
+  backend = "s3"
+  config {
+    bucket     = "${var.backend_bucket}"
+    region     = "${var.backend_region}"
+    key        = "${var.backend_prefix}"
   }
 }
 
