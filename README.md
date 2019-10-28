@@ -58,7 +58,7 @@ $ cd s3accesstrans
 ```ruby
 $ docker build -t s3accesstrans .
 
-Once the build is complete; check image created
+#Once the build is complete; check image created
 $ docker images
 ```
 4. Make configuration changes in file deploy/s3access.auto.tfvars 
@@ -75,21 +75,21 @@ $ aws configure
 $ terraform init
 
 # Below prompting appears
-Initializing the backend...
-bucket
-  The name of the S3 bucket
+# Initializing the backend...
+# bucket
+#  The name of the S3 bucket
+#
+#  Enter a value: <<Bucket Name>>
 
-  Enter a value: <<Bucket Name>>
+# key
+#  The path to the state file inside the bucket
 
-key
-  The path to the state file inside the bucket
+#  Enter a value: <<Prefix>>
 
-  Enter a value: <<Prefix>>
+# region
+#  The region of the S3 bucket.
 
-region
-  The region of the S3 bucket.
-
-  Enter a value: <<Region>>
+#  Enter a value: <<Region>>
 
 $ terraform plan
 
