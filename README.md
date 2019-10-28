@@ -1,7 +1,7 @@
 # S3 Access based Transition
 
 ## Overview
-This application orchestrates the AWS cloud to manage the S3 objects lifecycle transition based on every Object access, 
+This application orchestrates the AWS cloud to manage S3 objects lifecycle transition based on every Object access, 
 breaking AWS traditional way of managing the objects transitions based on the age of an object
 
 This application guarantees optimal cost benefit by managing S3 objects transition based on configurable access pattern transition policies and 
