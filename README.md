@@ -12,7 +12,7 @@ https://www.linkedin.com/pulse/aws-s3-intelligent-tiering-right-you-maheshwaran-
 ## Schematic System View
 ![alt text](https://github.com/cloudaffair/s3accesstrans/blob/master/misc/illustration_on_transition.png)
 ![alt text](https://github.com/cloudaffair/s3accesstrans/blob/master/misc/system_view.png)
-![alt text](https://github.com/cloudaffair/s3accesstrans/blob/master/misc/flow_line_description.png)
+![alt text](https://github.com/cloudaffair/s3accesstrans/blob/master/misc/Flow_line_description.png)
 
 ## Prerequisite 
 
